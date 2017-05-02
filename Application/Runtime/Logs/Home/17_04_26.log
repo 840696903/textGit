@@ -1,0 +1,13 @@
+[ 2017-04-26T18:47:07+08:00 ] ::1 /tp/index.php/Home/User/User/deleteUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0060s ]
+SQL: DELETE FROM `tb_user` WHERE `uid` = 26 [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.0040s ]
+SQL: SELECT u.*,d.deptName,d.did ddid FROM tb_user u,tb_dept d WHERE ( u.did=d.did ) LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_user` LIMIT 1   [ RunTime:0.0010s ]
+

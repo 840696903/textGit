@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" >
+		<title>测试</title>
+	</head>
+	<body>
+		<b>{$aaa|date='Y-m-d',###}</b>
+		<p style="color:red;">{$bbb}</p>
+		<b>{:date('Y-m-d',$aaa)}</b>
+		
+		<p style="color:red;">{$ccc[2]}</p>
+		<p >{$aobj:name}</p>
+		<p style="color:red;">{$aob->class}</p>
+		<b>{$Think.session.rue}</b>
+		
+		<p style="color:red;">{$sex==1?"男":"女"}</p>
+		<!-- 遍历所有数据 -->
+		<volist name="ccc" id="c1">{$c1}<br/></volist>
+		<hr>
+		<volist name="ccc" id="c1" mod="2">{$c1}<br/></volist>
+		<hr>
+		<volist name="ccc" id="c1" offset="2" length="3">{$c1}<br/></volist>
+		
+	</body>
+</html>
